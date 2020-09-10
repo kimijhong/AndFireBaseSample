@@ -1,39 +1,44 @@
 {
   "project_info": {
-    "project_number": "752687167138",
-    "firebase_url": "https://fcmsample-85078.firebaseio.com",
-    "project_id": "fcmsample-85078",
-    "storage_bucket": "fcmsample-85078.appspot.com"
+    "project_number": "1091372107878",
+    "firebase_url": "https://iosfirebaseapp-6cec6.firebaseio.com",
+    "project_id": "iosfirebaseapp-6cec6",
+    "storage_bucket": "iosfirebaseapp-6cec6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:752687167138:android:8e6505558596e718",
+        "mobilesdk_app_id": "1:1091372107878:android:033d5140b1e4670a6305a7",
         "android_client_info": {
           "package_name": "com.sample.fcmsample"
         }
       },
       "oauth_client": [
         {
-          "client_id": "752687167138-79vbe67po4pts7vs11ogd815iaefbbhf.apps.googleusercontent.com",
+          "client_id": "1091372107878-tsbl4k007347q67lkhq90e902l0047kd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBP4_pk3Q9FPNbfzfCI6xr5VJAd09B2kSE"
+          "current_key": "AIzaSyDWsI3cBPKEt91MvWDIp1In4AuPbntOGwg"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091372107878-tsbl4k007347q67lkhq90e902l0047kd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1091372107878-jteirqid2jf3qudnea4nh737rlqm65ic.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.twolegend.IOSFireBaseApp"
+              }
+            }
+          ]
         }
       }
     }

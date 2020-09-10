@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
+
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
@@ -25,6 +26,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         //remoteMessage.
 
+
+
         String from = remoteMessage.getFrom();
         Map<String,String> data = remoteMessage.getData();
 
@@ -36,7 +39,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         String content = data.get("contents");
 
-        Log.d(TAG,"from : " + from +" , contnets : " + content + ", ");
+        Log.e(TAG,"getNotification : " + remoteMessage.getNotification());
+        Log.e(TAG,"getData : " + remoteMessage.getData());
+        Log.e(TAG,"from : " + from +" , contnets : " + content + ", ");
 
 
 

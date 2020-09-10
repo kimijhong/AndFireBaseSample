@@ -1,7 +1,7 @@
 package com.sample.fcmsample;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,10 +18,10 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.firebase.iid.FirebaseInstanceId;
 
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -102,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
 
             requestObj.put("registration_ids", jsonArray);
 
+            Log.e(TAG,requestObj.toString());
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -152,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() throws AuthFailureError {
                 //해더정보를 넣어 줄때
                 Map<String, String> headers = new HashMap<>();
-                headers.put("Authorization", "key=AAAArz-mtqI:APA91bGXo0pmvd0YNgE1wru85PKUcG88XRWXeGBCx7B8ktJ499e2ORW2_V92ps3EglDRIbSly_z_0Z5Z0B50KinGXOSy4cvlFEud5xsKhUs0SFqXSI07QfhlEYj3VWrrbXPzHxkn3rob-nsiCvzvIoYV0g3_NoHWHw");
+                headers.put("Authorization", "key=AAAA_hrYyGY:APA91bFBy8QIoJNe3XfSuEPi7tETgMHulMaIryMm4n71onU0LIu2SwqvmYuh2U7uV6ZoKoKvO2PGVxyu8Mx1xdCY_C75RyqFlYOw_nWRFA3jdMHtBb8fGwVQX8rVWoKYfsHcaRjKEGnE");
                 return headers;
             }
 
